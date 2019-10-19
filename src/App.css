@@ -1,22 +1,55 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.App-logo {
-  height: 40vmin;
+#sidebar {
+  background: lightcoral;
+  width: 25%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contacts {
+  padding: 1em;
+  background: lightgreen;
+  border-bottom: 1px solid black;
+}
+
+#chat {
+  background: lightblue;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
 }
 
-.App-link {
-  color: #09d3ac;
+.me {
+  align-self: flex-end;
+}
+
+.you {
+  align-self: flex-start;
+}
+
+.msg {
+  padding: 1em;
+  margin: 1em;
+  background: turquoise;
+  border-radius: 25px;
+}
+
+#input {
+  border-radius: 25px;
+  height: 30px;
+  padding: 0.5em 1em;
+}
+
+body, html{
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#root, #root > div {
+  height: 100%;
 }
