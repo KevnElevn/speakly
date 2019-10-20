@@ -5,8 +5,8 @@
 }
 
 #sidebar {
-  background: lightcoral;
-  width: 25%;
+  background-image: url("bar.png");
+  width: 174px;
 }
 
 .contacts {
@@ -16,7 +16,8 @@
 }
 
 #chat {
-  background: lightblue;
+  background: #f6ffe4;
+  font-size: 2.5em;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -32,8 +33,8 @@
 }
 
 .msg {
-  padding: 1em;
-  margin: 1em;
+  padding: .5em;
+  margin: .5em;
   background: turquoise;
   border-radius: 25px;
 }
